@@ -27,7 +27,7 @@ begin
       puts "ゴーヤの長さ：#{record2["length"]} ゴーヤの大きさ：#{record2["weight"]} 品質：#{record2["quality"]} 譲渡先：#{record2["give_for"]} 売却日：#{record2["date"]}　"
   end
 ensure
-  connection.finish
+  connection2.finish
 end
 
 connection3 = PG::connect(dbname: "goya")
@@ -38,5 +38,5 @@ begin
     puts "ゴーヤの長さ：#{record3["length"]} ゴーヤの大きさ：#{record3["weight"]} 譲渡先：#{record3["give_for"]} 売却日：#{record3["date"]}"
   end
 ensure
-  connection2.finish
+  connection3.finish
 end
