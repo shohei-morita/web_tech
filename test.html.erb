@@ -33,7 +33,7 @@
     <%  data << "ゴーヤの長さ：#{record2["length"]} ゴーヤの大きさ：#{record2["weight"]} 品質：#{record2["quality"]} 譲渡先：#{record2["give_for"]} 売却日：#{record2["date"]}" %>
     <% end %>
     <form action="goya2.cgi" method="POST">
-       下記のボタンを押すと、譲渡先が自家消費でないもののゴーヤ情報の掲載ページに飛びます。<br><br>
+       下記のボタンを押すと、譲渡先が自家消費でないもののゴーヤ情報の掲載ページに飛びます<br><br>
        <!-- valueには、送りたいデータを代入する -->
        <!-- name="goya"を、情報の目印とする -->
       <input type="text" name="goya" value="<%= data.join(' ') %>">
@@ -47,7 +47,7 @@
     <%  data << "ゴーヤの長さ：#{record3["length"]} ゴーヤの大きさ：#{record3["weight"]} 譲渡先：#{record3["give_for"]} 売却日：#{record3["date"]}" %>
     <% end %>
     <form action="goya3.cgi" method="POST">
-        下記のボタンを押すと、品質が悪いもののゴーヤ情報の掲載ページに飛びます。<br><br>
+        下記のボタンを押すと、品質が悪いもののゴーヤ情報の掲載ページに飛びます<br><br>
         <!-- valueには、送りたいデータを代入する -->
         <!-- name="goya"を、情報の目印とする -->
       <input type="text" name="goya" value="<%= data.join(' ') %>">
